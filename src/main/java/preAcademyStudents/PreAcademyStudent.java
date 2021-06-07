@@ -35,7 +35,7 @@ final class PreAcademyStudent {
                 Integer.parseInt(activityPoints));
     }
 
-    public int getTotalPoints() {
+    public int calculateTotalPoints() {
         return this.lecturePoints + this.taskPoints + this.activityPoints;
     }
 
