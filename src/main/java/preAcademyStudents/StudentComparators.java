@@ -23,7 +23,7 @@ public final class StudentComparators {
                     .thenComparing(PreAcademyStudent::getLastName);
 
     static Comparator<PreAcademyStudent> SORT_BY_TOTAL_POINTS_AND_THEN_BY_ACTIVITY_POINTS =
-            Comparator.comparing(PreAcademyStudent::getTotalPoints).reversed()
-                    .thenComparing(PreAcademyStudent::getActivityPoints);
+            Comparator.comparing(PreAcademyStudent::getTotalPoints, Comparator.reverseOrder())
+                    .thenComparing(PreAcademyStudent::getActivityPoints, Comparator.reverseOrder());
 }
 
