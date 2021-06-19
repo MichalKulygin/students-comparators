@@ -5,17 +5,16 @@ import java.util.List;
 import static preAcademyStudents.StudentComparators.*;
 
 /**
- * preAcademyStudents
+ * preAcademyStudents - demo for sorting list using custom Comparators
  *
- * @CreatedBy MKgn
+ * @Author MKgn
  */
 class Demo {
     public static void main(String[] args) {
 
         String filePath = "src/main/resources/pre_students_grades.csv";
 
-        PreAcademyStudentsCsvReader preAcademyStudentsCsvParser = new PreAcademyStudentsCsvReader(filePath, ";");
-        List<PreAcademyStudent> studentsList = preAcademyStudentsCsvParser.getStudentsList();
+        List<PreAcademyStudent> studentsList = PreAcademyStudentsCsvParser.createListOfStudentsFromCSV_file(filePath, ";");
 
         System.out.println(studentsList.toString());
 

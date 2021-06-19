@@ -3,9 +3,9 @@ package preAcademyStudents;
 import java.util.Comparator;
 
 /**
- * PreAcademyStudentsComparators
+ * PreAcademyStudentsComparators - custom Comparators
  *
- * @CreatedBy MKgn
+ * @Author MKgn
  */
 public final class StudentComparators {
 

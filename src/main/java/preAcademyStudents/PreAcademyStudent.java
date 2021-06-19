@@ -3,7 +3,7 @@ package preAcademyStudents;
 /**
  * PreAcademyStudent model class.
  *
- * @CreatedBy MKgn
+ * @Author MKgn
  */
 final class PreAcademyStudent {
     final private String firstName;
@@ -35,27 +35,27 @@ final class PreAcademyStudent {
                 Integer.parseInt(activityPoints));
     }
 
-    public int calculateTotalPoints() {
+    int calculateTotalPoints() {
         return this.lecturePoints + this.taskPoints + this.activityPoints;
     }
 
-    public String getFirstName() {
+    String getFirstName() {
         return firstName;
     }
 
-    public String getLastName() {
+    String getLastName() {
         return lastName;
     }
 
-//    public int getLecturePoints() {
+//    int getLecturePoints() {
 //        return lecturePoints;
 //    }
 //
-//    public int getTaskPoints() {
+//    int getTaskPoints() {
 //        return taskPoints;
 //    }
 
-    public int getActivityPoints() {
+    int getActivityPoints() {
         return activityPoints;
     }
 
